@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E03AD281E7E50B40080DB84 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03AD271E7E50B40080DB84 /* ImageViewController.swift */; };
+		8E0C3B7E1E7CA46100553E67 /* PetFinderPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C3B7D1E7CA46100553E67 /* PetFinderPageViewController.swift */; };
+		8E0C3B801E7CAF0E00553E67 /* PetFinderParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C3B7F1E7CAF0E00553E67 /* PetFinderParentViewController.swift */; };
+		8E0C3B841E7CBA3B00553E67 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C3B831E7CBA3B00553E67 /* Array+Extension.swift */; };
+		8E147AD01E6FAFE300BFA2C3 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E147ACF1E6FAFE300BFA2C3 /* CircleButton.swift */; };
+		8E21AA491E6E6433001B1F42 /* DogDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E21AA481E6E6433001B1F42 /* DogDetailDataSource.swift */; };
+		8E2B44621E77A13A0030CFAA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B44521E77A13A0030CFAA /* Info.plist */; };
+		8E2B44631E77A13A0030CFAA /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B44551E77A13A0030CFAA /* STPopupController.m */; };
+		8E2B44641E77A13A0030CFAA /* STPopupControllerTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B44571E77A13A0030CFAA /* STPopupControllerTransitioningFade.m */; };
+		8E2B44651E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B44591E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.m */; };
+		8E2B44661E77A13A0030CFAA /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B445B1E77A13A0030CFAA /* STPopupLeftBarItem.m */; };
+		8E2B44671E77A13A0030CFAA /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B445D1E77A13A0030CFAA /* STPopupNavigationBar.m */; };
+		8E2B44681E77A13A0030CFAA /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B445F1E77A13A0030CFAA /* UIResponder+STPopup.m */; };
+		8E2B44691E77A13A0030CFAA /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B44611E77A13A0030CFAA /* UIViewController+STPopup.m */; };
+		8E2E6B3B1E6E27AF00534E71 /* APIPetfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E6B3A1E6E27AF00534E71 /* APIPetfinder.swift */; };
+		8E2E6B3F1E6E2B7F00534E71 /* URLFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E6B3E1E6E2B7F00534E71 /* URLFormatting.swift */; };
+		8E2E6B411E6E2C5200534E71 /* APIClient+Petfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E6B401E6E2C5200534E71 /* APIClient+Petfinder.swift */; };
+		8E2E6B441E6E313700534E71 /* AdoptablePet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E6B431E6E313700534E71 /* AdoptablePet.swift */; };
+		8E5093AE1E708FDF00C63507 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5093AD1E708FDF00C63507 /* UIViewController+Extension.swift */; };
+		8E5093B01E70BD6500C63507 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5093AF1E70BD6500C63507 /* UIImage+Extension.swift */; };
+		8E5EA0C41E7D163700F4345D /* CloudVisionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EA0C31E7D163700F4345D /* CloudVisionLabel.swift */; };
+		8E5EA0C61E7D18A400F4345D /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EA0C51E7D18A400F4345D /* LabelCollectionViewCell.swift */; };
+		8E6ACF171E67D7DF003F9C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6ACF161E67D7DF003F9C40 /* AppDelegate.swift */; };
+		8E6ACF1C1E67D7DF003F9C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6ACF1A1E67D7DF003F9C40 /* Main.storyboard */; };
+		8E6ACF1F1E67D7DF003F9C40 /* dogspot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E6ACF1D1E67D7DF003F9C40 /* dogspot.xcdatamodeld */; };
+		8E6ACF211E67D7DF003F9C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6ACF201E67D7DF003F9C40 /* Assets.xcassets */; };
+		8E6ACF241E67D7DF003F9C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6ACF221E67D7DF003F9C40 /* LaunchScreen.storyboard */; };
+		8E6ACF301E67D990003F9C40 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6ACF2E1E67D990003F9C40 /* libprotobuf-lite.a */; };
+		8E6ACF311E67D990003F9C40 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6ACF2F1E67D990003F9C40 /* libprotobuf.a */; };
+		8E6ACF3B1E67DA0B003F9C40 /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E6ACF3A1E67DA0B003F9C40 /* tensorflow_utils.mm */; };
+		8E6ACF3D1E67DAE9003F9C40 /* TensorManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E6ACF3C1E67DAE9003F9C40 /* TensorManager.mm */; };
+		8E6ACF441E67E4EB003F9C40 /* dog_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E6ACF421E67E4EB003F9C40 /* dog_retrained_labels.txt */; };
+		8E6ACF451E67E4EB003F9C40 /* mmapped_dog_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = 8E6ACF431E67E4EB003F9C40 /* mmapped_dog_retrained.pb */; };
+		8E7106A91E79C55D00E24E14 /* Finding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7106A81E79C55D00E24E14 /* Finding.swift */; };
+		8E7106AB1E79DDF300E24E14 /* MKDogAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7106AA1E79DDF300E24E14 /* MKDogAnnotation.swift */; };
+		8E7106AD1E79E3B600E24E14 /* MKDogAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7106AC1E79E3B600E24E14 /* MKDogAnnotationView.swift */; };
+		8E7106B11E79E7D400E24E14 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7106B01E79E7D400E24E14 /* MBFingerTipWindow.m */; };
+		8E720FC41E67F08C007E1C15 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FC31E67F08C007E1C15 /* Accelerate.framework */; };
+		8E720FC61E67F095007E1C15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FC51E67F095007E1C15 /* CoreGraphics.framework */; };
+		8E720FC81E67F0A2007E1C15 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FC71E67F0A2007E1C15 /* AVFoundation.framework */; };
+		8E720FCA1E67F0A7007E1C15 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FC91E67F0A7007E1C15 /* CoreMedia.framework */; };
+		8E720FCC1E67F0AE007E1C15 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FCB1E67F0AE007E1C15 /* AssetsLibrary.framework */; };
+		8E720FCE1E67F0B2007E1C15 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FCD1E67F0B2007E1C15 /* ImageIO.framework */; };
+		8E720FD01E67F0BC007E1C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E720FCF1E67F0BC007E1C15 /* Foundation.framework */; };
+		8E753F2D1E74A73E000CB11B /* MyBreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E753F2C1E74A73E000CB11B /* MyBreedsViewController.swift */; };
+		8E81E4A61E6A0F95001FAEB3 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81E4A51E6A0F95001FAEB3 /* LandingViewController.swift */; };
+		8E81E4AC1E6A14AD001FAEB3 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81E4AB1E6A14AD001FAEB3 /* Breed.swift */; };
+		8E81E4B21E6A20DB001FAEB3 /* BreedViewController+NSFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E81E4B11E6A20DB001FAEB3 /* BreedViewController+NSFetchedResultsController.swift */; };
+		8E82F8F91E74B15D000E28AF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F8F81E74B15D000E28AF /* MapViewController.swift */; };
+		8E82F8FB1E74B7D2000E28AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82F8FA1E74B7D2000E28AF /* MapKit.framework */; };
+		8E82F8FF1E74D9D2000E28AF /* RoundedTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F8FE1E74D9D2000E28AF /* RoundedTopView.swift */; };
+		8E82F9031E7527D3000E28AF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82F9021E7527D3000E28AF /* RoundedButton.swift */; };
+		8EA421E11E680C16004747D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421E01E680C16004747D6 /* Constants.swift */; };
+		8EA421E31E680C1D004747D6 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421E21E680C1D004747D6 /* ImageManager.swift */; };
+		8EA421E61E680C23004747D6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421E41E680C23004747D6 /* APIClient.swift */; };
+		8EA421E71E680C23004747D6 /* APIClient+CloudVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421E51E680C23004747D6 /* APIClient+CloudVision.swift */; };
+		8EA421EA1E680CDE004747D6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421E91E680CDE004747D6 /* SwiftyJSON.swift */; };
+		8EA421EC1E680DA3004747D6 /* BreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA421EB1E680DA3004747D6 /* BreedViewController.swift */; };
+		8EAB8F181E776BC80061FB03 /* PreviewDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB8F171E776BC80061FB03 /* PreviewDogViewController.swift */; };
+		8EEADAAA1E6A6A8C00793C0C /* TensorCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAA91E6A6A8C00793C0C /* TensorCameraViewController.swift */; };
+		8EEADAAC1E6A724F00793C0C /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAAB1E6A724F00793C0C /* AVCaptureDevice+Extension.swift */; };
+		8EEADAAF1E6A735C00793C0C /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAAE1E6A735C00793C0C /* CameraManager.swift */; };
+		8EEADAB51E6A8EF200793C0C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAB41E6A8EF200793C0C /* UIColor+Extension.swift */; };
+		8EEADAB81E6AA60B00793C0C /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAB71E6AA60B00793C0C /* SwiftOverlays.swift */; };
+		8EEADABA1E6AA97600793C0C /* SelectionSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEADAB91E6AA97600793C0C /* SelectionSquare.swift */; };
+		8EEBB8931E7F4E6B006209CB /* DashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBB8921E7F4E6B006209CB /* DashedView.swift */; };
+		8EF545581E6B82F400041E63 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545571E6B82F400041E63 /* TabBarViewController.swift */; };
+		8EF5457C1E6B838600041E63 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5455D1E6B838600041E63 /* YALSpringAnimation.m */; };
+		8EF5457D1E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545621E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.m */; };
+		8EF5457E1E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545661E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		8EF5457F1E6B838600041E63 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545691E6B838600041E63 /* YALAnimatingTabBarConstants.m */; };
+		8EF545801E6B838600041E63 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5456D1E6B838600041E63 /* YALFoldingTabBarController.m */; };
+		8EF545811E6B838600041E63 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545711E6B838600041E63 /* YALTabBarItem.m */; };
+		8EF545821E6B838600041E63 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EF545741E6B838600041E63 /* Info.plist */; };
+		8EF545831E6B838600041E63 /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF545781E6B838600041E63 /* YALCustomHeightTabBar.m */; };
+		8EF545841E6B838600041E63 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5457B1E6B838600041E63 /* YALFoldingTabBar.m */; };
+		8EF806D61E7BC6C000231BA2 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF806D51E7BC6C000231BA2 /* ImageCollectionViewCell.swift */; };
+		8EF806D81E7BCB0C00231BA2 /* PetFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF806D71E7BCB0C00231BA2 /* PetFinderViewController.swift */; };
+		8EFC209D1E7F9624009266E4 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC209C1E7F9624009266E4 /* RewardsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E03AD271E7E50B40080DB84 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		8E0C3B7D1E7CA46100553E67 /* PetFinderPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetFinderPageViewController.swift; path = "View Controllers/PetFinderPageViewController.swift"; sourceTree = "<group>"; };
+		8E0C3B7F1E7CAF0E00553E67 /* PetFinderParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetFinderParentViewController.swift; path = "View Controllers/PetFinderParentViewController.swift"; sourceTree = "<group>"; };
+		8E0C3B831E7CBA3B00553E67 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Supporting Files/Array+Extension.swift"; sourceTree = "<group>"; };
+		8E147ACF1E6FAFE300BFA2C3 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleButton.swift; path = Views/CircleButton.swift; sourceTree = "<group>"; };
+		8E21AA481E6E6433001B1F42 /* DogDetailDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DogDetailDataSource.swift; path = "View Controllers/Table Views/DogDetailDataSource.swift"; sourceTree = "<group>"; };
+		8E2B44521E77A13A0030CFAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2B44531E77A13A0030CFAA /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
+		8E2B44541E77A13A0030CFAA /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
+		8E2B44551E77A13A0030CFAA /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
+		8E2B44561E77A13A0030CFAA /* STPopupControllerTransitioningFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningFade.h; sourceTree = "<group>"; };
+		8E2B44571E77A13A0030CFAA /* STPopupControllerTransitioningFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningFade.m; sourceTree = "<group>"; };
+		8E2B44581E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningSlideVertical.h; sourceTree = "<group>"; };
+		8E2B44591E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningSlideVertical.m; sourceTree = "<group>"; };
+		8E2B445A1E77A13A0030CFAA /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		8E2B445B1E77A13A0030CFAA /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
+		8E2B445C1E77A13A0030CFAA /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
+		8E2B445D1E77A13A0030CFAA /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
+		8E2B445E1E77A13A0030CFAA /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		8E2B445F1E77A13A0030CFAA /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		8E2B44601E77A13A0030CFAA /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		8E2B44611E77A13A0030CFAA /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		8E2E6B3A1E6E27AF00534E71 /* APIPetfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIPetfinder.swift; path = Managers/Network/APIPetfinder.swift; sourceTree = "<group>"; };
+		8E2E6B3E1E6E2B7F00534E71 /* URLFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLFormatting.swift; path = "Supporting Files/URLFormatting.swift"; sourceTree = "<group>"; };
+		8E2E6B401E6E2C5200534E71 /* APIClient+Petfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "APIClient+Petfinder.swift"; path = "Managers/Network/APIClient+Petfinder.swift"; sourceTree = "<group>"; };
+		8E2E6B431E6E313700534E71 /* AdoptablePet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdoptablePet.swift; path = Model/AdoptablePet.swift; sourceTree = "<group>"; };
+		8E5093AD1E708FDF00C63507 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "Supporting Files/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8E5093AF1E70BD6500C63507 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Supporting Files/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8E5EA0C31E7D163700F4345D /* CloudVisionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudVisionLabel.swift; path = Model/CloudVisionLabel.swift; sourceTree = "<group>"; };
+		8E5EA0C51E7D18A400F4345D /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelCollectionViewCell.swift; path = "Views/Table View Cells/LabelCollectionViewCell.swift"; sourceTree = "<group>"; };
+		8E6ACF131E67D7DF003F9C40 /* dogspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dogspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6ACF161E67D7DF003F9C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E6ACF1B1E67D7DF003F9C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E6ACF1E1E67D7DF003F9C40 /* dogspot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dogspot.xcdatamodel; sourceTree = "<group>"; };
+		8E6ACF201E67D7DF003F9C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E6ACF231E67D7DF003F9C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E6ACF251E67D7DF003F9C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E6ACF2D1E67D900003F9C40 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		8E6ACF2E1E67D990003F9C40 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "../../makefile/gen/protobuf_ios/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
+		8E6ACF2F1E67D990003F9C40 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../../makefile/gen/protobuf_ios/lib/libprotobuf.a; sourceTree = "<group>"; };
+		8E6ACF391E67DA0B003F9C40 /* tensorflow_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tensorflow_utils.h; path = dogspot/Frameworks/Tensorflow/Utils/tensorflow_utils.h; sourceTree = "<group>"; };
+		8E6ACF3A1E67DA0B003F9C40 /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tensorflow_utils.mm; path = dogspot/Frameworks/Tensorflow/Utils/tensorflow_utils.mm; sourceTree = "<group>"; };
+		8E6ACF3C1E67DAE9003F9C40 /* TensorManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TensorManager.mm; path = dogspot/Frameworks/Tensorflow/TensorManager.mm; sourceTree = "<group>"; };
+		8E6ACF3E1E67DB2D003F9C40 /* TensorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TensorManager.h; path = dogspot/Frameworks/Tensorflow/TensorManager.h; sourceTree = "<group>"; };
+		8E6ACF421E67E4EB003F9C40 /* dog_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dog_retrained_labels.txt; path = "Vision Data/dog_retrained_labels.txt"; sourceTree = "<group>"; };
+		8E6ACF431E67E4EB003F9C40 /* mmapped_dog_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; name = mmapped_dog_retrained.pb; path = "Vision Data/mmapped_dog_retrained.pb"; sourceTree = "<group>"; };
+		8E7106A81E79C55D00E24E14 /* Finding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Finding.swift; path = "Core Data/Finding.swift"; sourceTree = "<group>"; };
+		8E7106AA1E79DDF300E24E14 /* MKDogAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKDogAnnotation.swift; path = "Supporting Files/MKDogAnnotation.swift"; sourceTree = "<group>"; };
+		8E7106AC1E79E3B600E24E14 /* MKDogAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKDogAnnotationView.swift; path = Views/MKDogAnnotationView.swift; sourceTree = "<group>"; };
+		8E7106AF1E79E7D400E24E14 /* MBFingerTipWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFingerTipWindow.h; path = dogspot/Frameworks/Fingertips/MBFingerTipWindow.h; sourceTree = "<group>"; };
+		8E7106B01E79E7D400E24E14 /* MBFingerTipWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFingerTipWindow.m; path = dogspot/Frameworks/Fingertips/MBFingerTipWindow.m; sourceTree = "<group>"; };
+		8E720FC31E67F08C007E1C15 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8E720FC51E67F095007E1C15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E720FC71E67F0A2007E1C15 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8E720FC91E67F0A7007E1C15 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8E720FCB1E67F0AE007E1C15 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8E720FCD1E67F0B2007E1C15 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8E720FCF1E67F0BC007E1C15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E753F2C1E74A73E000CB11B /* MyBreedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyBreedsViewController.swift; path = "View Controllers/MyBreedsViewController.swift"; sourceTree = "<group>"; };
+		8E81E4A51E6A0F95001FAEB3 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingViewController.swift; path = "View Controllers/LandingViewController.swift"; sourceTree = "<group>"; };
+		8E81E4AB1E6A14AD001FAEB3 /* Breed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Breed.swift; path = "Core Data/Breed.swift"; sourceTree = "<group>"; };
+		8E81E4B11E6A20DB001FAEB3 /* BreedViewController+NSFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BreedViewController+NSFetchedResultsController.swift"; path = "View Controllers/BreedViewController+NSFetchedResultsController.swift"; sourceTree = "<group>"; };
+		8E82F8F81E74B15D000E28AF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/MapViewController.swift"; sourceTree = "<group>"; };
+		8E82F8FA1E74B7D2000E28AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8E82F8FE1E74D9D2000E28AF /* RoundedTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedTopView.swift; path = Views/RoundedTopView.swift; sourceTree = "<group>"; };
+		8E82F9021E7527D3000E28AF /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = Views/RoundedButton.swift; sourceTree = "<group>"; };
+		8EA421E01E680C16004747D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8EA421E21E680C1D004747D6 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageManager.swift; path = Managers/Convenience/ImageManager.swift; sourceTree = "<group>"; };
+		8EA421E41E680C23004747D6 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Managers/Network/APIClient.swift; sourceTree = "<group>"; };
+		8EA421E51E680C23004747D6 /* APIClient+CloudVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "APIClient+CloudVision.swift"; path = "Managers/Network/APIClient+CloudVision.swift"; sourceTree = "<group>"; };
+		8EA421E91E680CDE004747D6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = dogspot/Frameworks/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		8EA421EB1E680DA3004747D6 /* BreedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreedViewController.swift; path = "View Controllers/BreedViewController.swift"; sourceTree = "<group>"; };
+		8EAB8F171E776BC80061FB03 /* PreviewDogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewDogViewController.swift; path = "View Controllers/PreviewDogViewController.swift"; sourceTree = "<group>"; };
+		8EEADAA91E6A6A8C00793C0C /* TensorCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TensorCameraViewController.swift; path = "View Controllers/TensorCameraViewController.swift"; sourceTree = "<group>"; };
+		8EEADAAB1E6A724F00793C0C /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVCaptureDevice+Extension.swift"; path = "Supporting Files/AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		8EEADAAE1E6A735C00793C0C /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraManager.swift; path = Managers/Camera/CameraManager.swift; sourceTree = "<group>"; };
+		8EEADAB41E6A8EF200793C0C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Supporting Files/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8EEADAB71E6AA60B00793C0C /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = dogspot/Frameworks/SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
+		8EEADAB91E6AA97600793C0C /* SelectionSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectionSquare.swift; path = Views/SelectionSquare.swift; sourceTree = "<group>"; };
+		8EEBB8921E7F4E6B006209CB /* DashedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashedView.swift; path = Views/DashedView.swift; sourceTree = "<group>"; };
+		8EF545571E6B82F400041E63 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = "View Controllers/TabBarViewController.swift"; sourceTree = "<group>"; };
+		8EF5455C1E6B838600041E63 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		8EF5455D1E6B838600041E63 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		8EF545611E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
+		8EF545621E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		8EF545651E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		8EF545661E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		8EF545681E6B838600041E63 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		8EF545691E6B838600041E63 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		8EF5456C1E6B838600041E63 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		8EF5456D1E6B838600041E63 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		8EF545701E6B838600041E63 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		8EF545711E6B838600041E63 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		8EF545731E6B838600041E63 /* FoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldingTabBar.h; sourceTree = "<group>"; };
+		8EF545741E6B838600041E63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF545771E6B838600041E63 /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
+		8EF545781E6B838600041E63 /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		8EF5457A1E6B838600041E63 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		8EF5457B1E6B838600041E63 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		8EF806D51E7BC6C000231BA2 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = "Views/Table View Cells/ImageCollectionViewCell.swift"; sourceTree = "<group>"; };
+		8EF806D71E7BCB0C00231BA2 /* PetFinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetFinderViewController.swift; path = "View Controllers/PetFinderViewController.swift"; sourceTree = "<group>"; };
+		8EFC209C1E7F9624009266E4 /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RewardsViewController.swift; path = "View Controllers/RewardsViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E6ACF101E67D7DF003F9C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E720FD01E67F0BC007E1C15 /* Foundation.framework in Frameworks */,
+				8E720FCE1E67F0B2007E1C15 /* ImageIO.framework in Frameworks */,
+				8E82F8FB1E74B7D2000E28AF /* MapKit.framework in Frameworks */,
+				8E720FCC1E67F0AE007E1C15 /* AssetsLibrary.framework in Frameworks */,
+				8E720FCA1E67F0A7007E1C15 /* CoreMedia.framework in Frameworks */,
+				8E720FC81E67F0A2007E1C15 /* AVFoundation.framework in Frameworks */,
+				8E720FC61E67F095007E1C15 /* CoreGraphics.framework in Frameworks */,
+				8E720FC41E67F08C007E1C15 /* Accelerate.framework in Frameworks */,
+				8E6ACF311E67D990003F9C40 /* libprotobuf.a in Frameworks */,
+				8E6ACF301E67D990003F9C40 /* libprotobuf-lite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E21AA441E6E61A7001B1F42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8EF806D51E7BC6C000231BA2 /* ImageCollectionViewCell.swift */,
+				8E5EA0C51E7D18A400F4345D /* LabelCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8E21AA471E6E6418001B1F42 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E21AA481E6E6433001B1F42 /* DogDetailDataSource.swift */,
+			);
+			name = "Table Views";
+			sourceTree = "<group>";
+		};
+		8E2B44511E77A13A0030CFAA /* STPopup */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B44521E77A13A0030CFAA /* Info.plist */,
+				8E2B44531E77A13A0030CFAA /* STPopup.h */,
+				8E2B44541E77A13A0030CFAA /* STPopupController.h */,
+				8E2B44551E77A13A0030CFAA /* STPopupController.m */,
+				8E2B44561E77A13A0030CFAA /* STPopupControllerTransitioningFade.h */,
+				8E2B44571E77A13A0030CFAA /* STPopupControllerTransitioningFade.m */,
+				8E2B44581E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.h */,
+				8E2B44591E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.m */,
+				8E2B445A1E77A13A0030CFAA /* STPopupLeftBarItem.h */,
+				8E2B445B1E77A13A0030CFAA /* STPopupLeftBarItem.m */,
+				8E2B445C1E77A13A0030CFAA /* STPopupNavigationBar.h */,
+				8E2B445D1E77A13A0030CFAA /* STPopupNavigationBar.m */,
+				8E2B445E1E77A13A0030CFAA /* UIResponder+STPopup.h */,
+				8E2B445F1E77A13A0030CFAA /* UIResponder+STPopup.m */,
+				8E2B44601E77A13A0030CFAA /* UIViewController+STPopup.h */,
+				8E2B44611E77A13A0030CFAA /* UIViewController+STPopup.m */,
+			);
+			name = STPopup;
+			path = dogspot/Frameworks/STPopup;
+			sourceTree = "<group>";
+		};
+		8E2E6B421E6E311700534E71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EA421DB1E680B7D004747D6 /* Core Data */,
+				8E2E6B431E6E313700534E71 /* AdoptablePet.swift */,
+				8E5EA0C31E7D163700F4345D /* CloudVisionLabel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E6ACF0A1E67D7DF003F9C40 = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF151E67D7DF003F9C40 /* dogspot */,
+				8E6ACF2B1E67D8E1003F9C40 /* Frameworks */,
+				8E6ACF141E67D7DF003F9C40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E6ACF141E67D7DF003F9C40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF131E67D7DF003F9C40 /* dogspot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E6ACF151E67D7DF003F9C40 /* dogspot */ = {
+			isa = PBXGroup;
+			children = (
+				8E2E6B421E6E311700534E71 /* Model */,
+				8EEADAB01E6A855B00793C0C /* Views */,
+				8EA421DC1E680B8A004747D6 /* Managers */,
+				8E6ACF2C1E67D8EB003F9C40 /* Supporting Files */,
+				8EA421DF1E680BAC004747D6 /* View Controllers */,
+				8E6ACF161E67D7DF003F9C40 /* AppDelegate.swift */,
+				8E6ACF1A1E67D7DF003F9C40 /* Main.storyboard */,
+				8E6ACF201E67D7DF003F9C40 /* Assets.xcassets */,
+				8E6ACF221E67D7DF003F9C40 /* LaunchScreen.storyboard */,
+				8EA421E01E680C16004747D6 /* Constants.swift */,
+			);
+			path = dogspot;
+			sourceTree = "<group>";
+		};
+		8E6ACF2B1E67D8E1003F9C40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E7106AE1E79E7C700E24E14 /* Fingertips */,
+				8E82F8FA1E74B7D2000E28AF /* MapKit.framework */,
+				8E2B44511E77A13A0030CFAA /* STPopup */,
+				8EF545591E6B838600041E63 /* FoldingTabBar */,
+				8EEADAB61E6AA5F800793C0C /* SwiftOverlays */,
+				8E6ACF321E67D9A7003F9C40 /* Tensorflow */,
+				8EA421E81E680CB9004747D6 /* SwiftyJSON */,
+				8E720FCF1E67F0BC007E1C15 /* Foundation.framework */,
+				8E720FCD1E67F0B2007E1C15 /* ImageIO.framework */,
+				8E720FCB1E67F0AE007E1C15 /* AssetsLibrary.framework */,
+				8E720FC91E67F0A7007E1C15 /* CoreMedia.framework */,
+				8E720FC71E67F0A2007E1C15 /* AVFoundation.framework */,
+				8E720FC51E67F095007E1C15 /* CoreGraphics.framework */,
+				8E720FC31E67F08C007E1C15 /* Accelerate.framework */,
+				8E6ACF2E1E67D990003F9C40 /* libprotobuf-lite.a */,
+				8E6ACF2F1E67D990003F9C40 /* libprotobuf.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E6ACF2C1E67D8EB003F9C40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EEADAB31E6A8EDE00793C0C /* Extensions */,
+				8E6ACF251E67D7DF003F9C40 /* Info.plist */,
+				8E6ACF2D1E67D900003F9C40 /* Bridging-Header.h */,
+				8E7106AA1E79DDF300E24E14 /* MKDogAnnotation.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E6ACF321E67D9A7003F9C40 /* Tensorflow */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF331E67D9AF003F9C40 /* Utils */,
+				8E6ACF3C1E67DAE9003F9C40 /* TensorManager.mm */,
+				8E6ACF3E1E67DB2D003F9C40 /* TensorManager.h */,
+			);
+			name = Tensorflow;
+			sourceTree = "<group>";
+		};
+		8E6ACF331E67D9AF003F9C40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF391E67DA0B003F9C40 /* tensorflow_utils.h */,
+				8E6ACF3A1E67DA0B003F9C40 /* tensorflow_utils.mm */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		8E6ACF411E67E4B1003F9C40 /* Vision Data */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF421E67E4EB003F9C40 /* dog_retrained_labels.txt */,
+				8E6ACF431E67E4EB003F9C40 /* mmapped_dog_retrained.pb */,
+			);
+			name = "Vision Data";
+			sourceTree = "<group>";
+		};
+		8E7106AE1E79E7C700E24E14 /* Fingertips */ = {
+			isa = PBXGroup;
+			children = (
+				8E7106AF1E79E7D400E24E14 /* MBFingerTipWindow.h */,
+				8E7106B01E79E7D400E24E14 /* MBFingerTipWindow.m */,
+			);
+			name = Fingertips;
+			sourceTree = "<group>";
+		};
+		8EA421DB1E680B7D004747D6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF1D1E67D7DF003F9C40 /* dogspot.xcdatamodeld */,
+				8E81E4AB1E6A14AD001FAEB3 /* Breed.swift */,
+				8E7106A81E79C55D00E24E14 /* Finding.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		8EA421DC1E680B8A004747D6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8E6ACF411E67E4B1003F9C40 /* Vision Data */,
+				8EEADAAD1E6A734D00793C0C /* Camera */,
+				8EA421DE1E680B99004747D6 /* Network */,
+				8EA421DD1E680B93004747D6 /* Convenience */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		8EA421DD1E680B93004747D6 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				8EA421E21E680C1D004747D6 /* ImageManager.swift */,
+			);
+			name = Convenience;
+			sourceTree = "<group>";
+		};
+		8EA421DE1E680B99004747D6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8EA421E41E680C23004747D6 /* APIClient.swift */,
+				8EA421E51E680C23004747D6 /* APIClient+CloudVision.swift */,
+				8E2E6B401E6E2C5200534E71 /* APIClient+Petfinder.swift */,
+				8E2E6B3A1E6E27AF00534E71 /* APIPetfinder.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		8EA421DF1E680BAC004747D6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E21AA471E6E6418001B1F42 /* Table Views */,
+				8EF545561E6B82CB00041E63 /* Navigation Controllers */,
+				8EEADAA81E6A6A4A00793C0C /* Onboarding */,
+				8EA421EB1E680DA3004747D6 /* BreedViewController.swift */,
+				8E81E4B11E6A20DB001FAEB3 /* BreedViewController+NSFetchedResultsController.swift */,
+				8EEADAA91E6A6A8C00793C0C /* TensorCameraViewController.swift */,
+				8E82F8F81E74B15D000E28AF /* MapViewController.swift */,
+				8EAB8F171E776BC80061FB03 /* PreviewDogViewController.swift */,
+				8E0C3B7D1E7CA46100553E67 /* PetFinderPageViewController.swift */,
+				8EF806D71E7BCB0C00231BA2 /* PetFinderViewController.swift */,
+				8E03AD271E7E50B40080DB84 /* ImageViewController.swift */,
+				8EFC209C1E7F9624009266E4 /* RewardsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8EA421E81E680CB9004747D6 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				8EA421E91E680CDE004747D6 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		8EEADAA81E6A6A4A00793C0C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8E81E4A51E6A0F95001FAEB3 /* LandingViewController.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		8EEADAAD1E6A734D00793C0C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8EEADAAE1E6A735C00793C0C /* CameraManager.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		8EEADAB01E6A855B00793C0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E21AA441E6E61A7001B1F42 /* Cells */,
+				8EEADAB91E6AA97600793C0C /* SelectionSquare.swift */,
+				8E147ACF1E6FAFE300BFA2C3 /* CircleButton.swift */,
+				8E82F8FE1E74D9D2000E28AF /* RoundedTopView.swift */,
+				8E82F9021E7527D3000E28AF /* RoundedButton.swift */,
+				8E7106AC1E79E3B600E24E14 /* MKDogAnnotationView.swift */,
+				8EEBB8921E7F4E6B006209CB /* DashedView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8EEADAB31E6A8EDE00793C0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EEADAAB1E6A724F00793C0C /* AVCaptureDevice+Extension.swift */,
+				8EEADAB41E6A8EF200793C0C /* UIColor+Extension.swift */,
+				8E2E6B3E1E6E2B7F00534E71 /* URLFormatting.swift */,
+				8E5093AD1E708FDF00C63507 /* UIViewController+Extension.swift */,
+				8E5093AF1E70BD6500C63507 /* UIImage+Extension.swift */,
+				8E0C3B831E7CBA3B00553E67 /* Array+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8EEADAB61E6AA5F800793C0C /* SwiftOverlays */ = {
+			isa = PBXGroup;
+			children = (
+				8EEADAB71E6AA60B00793C0C /* SwiftOverlays.swift */,
+			);
+			name = SwiftOverlays;
+			sourceTree = "<group>";
+		};
+		8EF545561E6B82CB00041E63 /* Navigation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545571E6B82F400041E63 /* TabBarViewController.swift */,
+				8E753F2C1E74A73E000CB11B /* MyBreedsViewController.swift */,
+				8E0C3B7F1E7CAF0E00553E67 /* PetFinderParentViewController.swift */,
+			);
+			name = "Navigation Controllers";
+			sourceTree = "<group>";
+		};
+		8EF545591E6B838600041E63 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5455A1E6B838600041E63 /* Animation */,
+				8EF5455E1E6B838600041E63 /* Category */,
+				8EF545671E6B838600041E63 /* Constants */,
+				8EF5456A1E6B838600041E63 /* Controller */,
+				8EF5456E1E6B838600041E63 /* Model */,
+				8EF545721E6B838600041E63 /* Resources */,
+				8EF545751E6B838600041E63 /* View */,
+			);
+			name = FoldingTabBar;
+			path = dogspot/Frameworks/FoldingTabBar;
+			sourceTree = "<group>";
+		};
+		8EF5455A1E6B838600041E63 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5455B1E6B838600041E63 /* YALSpringAnimation */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		8EF5455B1E6B838600041E63 /* YALSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5455C1E6B838600041E63 /* YALSpringAnimation.h */,
+				8EF5455D1E6B838600041E63 /* YALSpringAnimation.m */,
+			);
+			path = YALSpringAnimation;
+			sourceTree = "<group>";
+		};
+		8EF5455E1E6B838600041E63 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5455F1E6B838600041E63 /* CAAnimation */,
+				8EF545631E6B838600041E63 /* CATransaction */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8EF5455F1E6B838600041E63 /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545601E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		8EF545601E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545611E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.h */,
+				8EF545621E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.m */,
+			);
+			path = "CAAnimation+YALTabBarViewAnimations";
+			sourceTree = "<group>";
+		};
+		8EF545631E6B838600041E63 /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545641E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion */,
+			);
+			path = CATransaction;
+			sourceTree = "<group>";
+		};
+		8EF545641E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545651E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				8EF545661E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+			);
+			path = "CATransaction+TransactionWithAnimationsAndCompletion";
+			sourceTree = "<group>";
+		};
+		8EF545671E6B838600041E63 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545681E6B838600041E63 /* YALAnimatingTabBarConstants.h */,
+				8EF545691E6B838600041E63 /* YALAnimatingTabBarConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8EF5456A1E6B838600041E63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5456B1E6B838600041E63 /* FoldingTabBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EF5456B1E6B838600041E63 /* FoldingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5456C1E6B838600041E63 /* YALFoldingTabBarController.h */,
+				8EF5456D1E6B838600041E63 /* YALFoldingTabBarController.m */,
+			);
+			path = FoldingTabBarController;
+			sourceTree = "<group>";
+		};
+		8EF5456E1E6B838600041E63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5456F1E6B838600041E63 /* TabBarItem */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EF5456F1E6B838600041E63 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545701E6B838600041E63 /* YALTabBarItem.h */,
+				8EF545711E6B838600041E63 /* YALTabBarItem.m */,
+			);
+			path = TabBarItem;
+			sourceTree = "<group>";
+		};
+		8EF545721E6B838600041E63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545731E6B838600041E63 /* FoldingTabBar.h */,
+				8EF545741E6B838600041E63 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EF545751E6B838600041E63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545761E6B838600041E63 /* CustomHeightTabBar */,
+				8EF545791E6B838600041E63 /* FoldingTabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF545761E6B838600041E63 /* CustomHeightTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8EF545771E6B838600041E63 /* YALCustomHeightTabBar.h */,
+				8EF545781E6B838600041E63 /* YALCustomHeightTabBar.m */,
+			);
+			path = CustomHeightTabBar;
+			sourceTree = "<group>";
+		};
+		8EF545791E6B838600041E63 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5457A1E6B838600041E63 /* YALFoldingTabBar.h */,
+				8EF5457B1E6B838600041E63 /* YALFoldingTabBar.m */,
+			);
+			path = FoldingTabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E6ACF121E67D7DF003F9C40 /* dogspot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E6ACF281E67D7DF003F9C40 /* Build configuration list for PBXNativeTarget "dogspot" */;
+			buildPhases = (
+				8E6ACF0F1E67D7DF003F9C40 /* Sources */,
+				8E6ACF101E67D7DF003F9C40 /* Frameworks */,
+				8E6ACF111E67D7DF003F9C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dogspot;
+			productName = dogspot;
+			productReference = 8E6ACF131E67D7DF003F9C40 /* dogspot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E6ACF0B1E67D7DF003F9C40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Santiago Gutierrez";
+				TargetAttributes = {
+					8E6ACF121E67D7DF003F9C40 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = RZ27SH5DHS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8E6ACF0E1E67D7DF003F9C40 /* Build configuration list for PBXProject "dogspot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E6ACF0A1E67D7DF003F9C40;
+			productRefGroup = 8E6ACF141E67D7DF003F9C40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E6ACF121E67D7DF003F9C40 /* dogspot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E6ACF111E67D7DF003F9C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E6ACF241E67D7DF003F9C40 /* LaunchScreen.storyboard in Resources */,
+				8E6ACF211E67D7DF003F9C40 /* Assets.xcassets in Resources */,
+				8EF545821E6B838600041E63 /* Info.plist in Resources */,
+				8E6ACF1C1E67D7DF003F9C40 /* Main.storyboard in Resources */,
+				8E6ACF441E67E4EB003F9C40 /* dog_retrained_labels.txt in Resources */,
+				8E6ACF451E67E4EB003F9C40 /* mmapped_dog_retrained.pb in Resources */,
+				8E2B44621E77A13A0030CFAA /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E6ACF0F1E67D7DF003F9C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E5093AE1E708FDF00C63507 /* UIViewController+Extension.swift in Sources */,
+				8EF806D61E7BC6C000231BA2 /* ImageCollectionViewCell.swift in Sources */,
+				8EF545801E6B838600041E63 /* YALFoldingTabBarController.m in Sources */,
+				8EEADAAC1E6A724F00793C0C /* AVCaptureDevice+Extension.swift in Sources */,
+				8EF545581E6B82F400041E63 /* TabBarViewController.swift in Sources */,
+				8E81E4B21E6A20DB001FAEB3 /* BreedViewController+NSFetchedResultsController.swift in Sources */,
+				8EA421E71E680C23004747D6 /* APIClient+CloudVision.swift in Sources */,
+				8E2B44631E77A13A0030CFAA /* STPopupController.m in Sources */,
+				8EF545831E6B838600041E63 /* YALCustomHeightTabBar.m in Sources */,
+				8E6ACF1F1E67D7DF003F9C40 /* dogspot.xcdatamodeld in Sources */,
+				8E82F9031E7527D3000E28AF /* RoundedButton.swift in Sources */,
+				8EEBB8931E7F4E6B006209CB /* DashedView.swift in Sources */,
+				8E2B44681E77A13A0030CFAA /* UIResponder+STPopup.m in Sources */,
+				8E7106AB1E79DDF300E24E14 /* MKDogAnnotation.swift in Sources */,
+				8EF545841E6B838600041E63 /* YALFoldingTabBar.m in Sources */,
+				8EEADABA1E6AA97600793C0C /* SelectionSquare.swift in Sources */,
+				8E0C3B7E1E7CA46100553E67 /* PetFinderPageViewController.swift in Sources */,
+				8E5EA0C61E7D18A400F4345D /* LabelCollectionViewCell.swift in Sources */,
+				8E21AA491E6E6433001B1F42 /* DogDetailDataSource.swift in Sources */,
+				8E82F8F91E74B15D000E28AF /* MapViewController.swift in Sources */,
+				8E2E6B441E6E313700534E71 /* AdoptablePet.swift in Sources */,
+				8EF5457D1E6B838600041E63 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				8EA421EA1E680CDE004747D6 /* SwiftyJSON.swift in Sources */,
+				8E03AD281E7E50B40080DB84 /* ImageViewController.swift in Sources */,
+				8EA421E31E680C1D004747D6 /* ImageManager.swift in Sources */,
+				8EA421EC1E680DA3004747D6 /* BreedViewController.swift in Sources */,
+				8EA421E61E680C23004747D6 /* APIClient.swift in Sources */,
+				8EF806D81E7BCB0C00231BA2 /* PetFinderViewController.swift in Sources */,
+				8E6ACF3D1E67DAE9003F9C40 /* TensorManager.mm in Sources */,
+				8EF5457F1E6B838600041E63 /* YALAnimatingTabBarConstants.m in Sources */,
+				8E82F8FF1E74D9D2000E28AF /* RoundedTopView.swift in Sources */,
+				8E7106AD1E79E3B600E24E14 /* MKDogAnnotationView.swift in Sources */,
+				8E2E6B411E6E2C5200534E71 /* APIClient+Petfinder.swift in Sources */,
+				8E81E4AC1E6A14AD001FAEB3 /* Breed.swift in Sources */,
+				8E753F2D1E74A73E000CB11B /* MyBreedsViewController.swift in Sources */,
+				8E2B44651E77A13A0030CFAA /* STPopupControllerTransitioningSlideVertical.m in Sources */,
+				8EF5457C1E6B838600041E63 /* YALSpringAnimation.m in Sources */,
+				8E147AD01E6FAFE300BFA2C3 /* CircleButton.swift in Sources */,
+				8E0C3B801E7CAF0E00553E67 /* PetFinderParentViewController.swift in Sources */,
+				8EFC209D1E7F9624009266E4 /* RewardsViewController.swift in Sources */,
+				8E6ACF3B1E67DA0B003F9C40 /* tensorflow_utils.mm in Sources */,
+				8E2B44661E77A13A0030CFAA /* STPopupLeftBarItem.m in Sources */,
+				8E5093B01E70BD6500C63507 /* UIImage+Extension.swift in Sources */,
+				8E2B44671E77A13A0030CFAA /* STPopupNavigationBar.m in Sources */,
+				8EF545811E6B838600041E63 /* YALTabBarItem.m in Sources */,
+				8E6ACF171E67D7DF003F9C40 /* AppDelegate.swift in Sources */,
+				8E5EA0C41E7D163700F4345D /* CloudVisionLabel.swift in Sources */,
+				8E7106A91E79C55D00E24E14 /* Finding.swift in Sources */,
+				8EEADAB81E6AA60B00793C0C /* SwiftOverlays.swift in Sources */,
+				8EEADAAA1E6A6A8C00793C0C /* TensorCameraViewController.swift in Sources */,
+				8E81E4A61E6A0F95001FAEB3 /* LandingViewController.swift in Sources */,
+				8EF5457E1E6B838600041E63 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
+				8E2E6B3B1E6E27AF00534E71 /* APIPetfinder.swift in Sources */,
+				8E2B44691E77A13A0030CFAA /* UIViewController+STPopup.m in Sources */,
+				8E2E6B3F1E6E2B7F00534E71 /* URLFormatting.swift in Sources */,
+				8E7106B11E79E7D400E24E14 /* MBFingerTipWindow.m in Sources */,
+				8EEADAAF1E6A735C00793C0C /* CameraManager.swift in Sources */,
+				8E2B44641E77A13A0030CFAA /* STPopupControllerTransitioningFade.m in Sources */,
+				8E0C3B841E7CBA3B00553E67 /* Array+Extension.swift in Sources */,
+				8EA421E11E680C16004747D6 /* Constants.swift in Sources */,
+				8EEADAB51E6A8EF200793C0C /* UIColor+Extension.swift in Sources */,
+				8EAB8F181E776BC80061FB03 /* PreviewDogViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E6ACF1A1E67D7DF003F9C40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E6ACF1B1E67D7DF003F9C40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E6ACF221E67D7DF003F9C40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E6ACF231E67D7DF003F9C40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E6ACF271E67D7DF003F9C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E6ACF2A1E67D7DF003F9C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = RZ27SH5DHS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../makefile/downloads/protobuf/src/",
+					"$(SRCROOT)/../../makefile/downloads",
+					"$(SRCROOT)/../../makefile/downloads/eigen",
+					"$(SRCROOT)/../../makefile/gen/proto",
+					"$(SRCROOT)/../../../..",
+				);
+				INFOPLIST_FILE = dogspot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../makefile/gen/protobuf_ios/lib",
+					"$(SRCROOT)/../../makefile/gen/lib",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/../../makefile/gen/lib/libtensorflow-core.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gutierrezsantiago.dogspot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E6ACF0E1E67D7DF003F9C40 /* Build configuration list for PBXProject "dogspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6ACF271E67D7DF003F9C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E6ACF281E67D7DF003F9C40 /* Build configuration list for PBXNativeTarget "dogspot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6ACF2A1E67D7DF003F9C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E6ACF1D1E67D7DF003F9C40 /* dogspot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E6ACF1E1E67D7DF003F9C40 /* dogspot.xcdatamodel */,
+			);
+			currentVersion = 8E6ACF1E1E67D7DF003F9C40 /* dogspot.xcdatamodel */;
+			path = dogspot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E6ACF0B1E67D7DF003F9C40 /* Project object */;
+}
